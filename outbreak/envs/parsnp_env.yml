@@ -1,0 +1,8 @@
+name: parsnp_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - parsnp
+  - harvesttools
+  - gubbins
