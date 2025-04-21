@@ -1,0 +1,10 @@
+FastTree Version 2.1.11 Double precision (No SSE3), OpenMP (1 threads)
+Alignment: parsnp_out/parsnp.snps.mblocks
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 100
+Search: Exhaustive (slow) +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: no
+ML Model: Jukes-Cantor, CAT approximation with 20 rate categories
+Initial topology in 0.00 seconds
+Refining topology: 0 rounds ME-NNIs, 2 rounds ME-SPRs, 0 rounds ML-NNIs
+Total branch-length 0.000 after 0.00 sec
+Total time: 0.00 seconds Unique: 1/3 Bad splits: 0/0

@@ -1,0 +1,443 @@
+Apr-21 21:26:05.994 [main] DEBUG nextflow.cli.Launcher - $> nextflow run . --all --bactmap_csv dummy/bactmap/samples.csv --bactmap_ref dummy/bactmap/ref.fa --parsnp_ref dummy/parsnp/ref.fa --parsnp_dir dummy/parsnp/assemblies --no-historic
+Apr-21 21:26:06.149 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.5
+Apr-21 21:26:06.188 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.4
+Apr-21 21:26:06.218 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-21 21:26:06.219 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-21 21:26:06.224 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-21 21:26:06.241 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-21 21:26:07.029 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/nf-comparative-genomics/outbreak/nextflow.config
+Apr-21 21:26:07.033 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/nf-comparative-genomics/outbreak/nextflow.config
+Apr-21 21:26:07.053 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Apr-21 21:26:07.057 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2503ec73] - activable => nextflow.secret.LocalSecretsProvider@2503ec73
+Apr-21 21:26:07.087 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-21 21:26:07.240 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-21 21:26:07.262 [main] DEBUG nextflow.cli.CmdRun - Launching `./main.nf` [agitated_bose] DSL2 - revision: b0e7f110cc
+Apr-21 21:26:07.267 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-21 21:26:07.267 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-21 21:26:07.356 [main] DEBUG nextflow.Session - Session UUID: f7b70f03-2579-4dc5-9593-94413d4a75d9
+Apr-21 21:26:07.357 [main] DEBUG nextflow.Session - Run name: agitated_bose
+Apr-21 21:26:07.358 [main] DEBUG nextflow.Session - Executor pool size: 2
+Apr-21 21:26:07.372 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-21 21:26:07.379 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-21 21:26:07.418 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.5 build 5935
+  Created: 04-03-2025 17:55 UTC 
+  System: Linux 6.8.0-1026-azure
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.26-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 22382@codespaces-346bea [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (282 MB) - Swap: 0 (0)
+Apr-21 21:26:07.453 [main] DEBUG nextflow.Session - Work-dir: /workspaces/nf-comparative-genomics/outbreak/work [ext2/ext3]
+Apr-21 21:26:07.453 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/nf-comparative-genomics/outbreak/bin
+Apr-21 21:26:07.465 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-21 21:26:07.478 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-21 21:26:07.512 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-21 21:26:07.528 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Apr-21 21:26:07.638 [main] DEBUG nextflow.Session - Session start
+Apr-21 21:26:08.086 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-21 21:26:08.178 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-21 21:26:08.178 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-21 21:26:08.186 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-21 21:26:08.213 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Apr-21 21:26:08.224 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-21 21:26:08.433 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-21 21:26:08.433 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-21 21:26:08.439 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Parsnp, Bactmap
+Apr-21 21:26:08.440 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Apr-21 21:26:08.441 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Bactmap
+Apr-21 21:26:08.442 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Parsnp
+Apr-21 21:26:08.443 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a6dc1d9d090d970a: /workspaces/nf-comparative-genomics/outbreak/main.nf
+Apr-21 21:26:08.443 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-21 21:26:08.443 [main] DEBUG nextflow.Session - Session await
+Apr-21 21:26:08.781 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-21 21:26:08.804 [Task submitter] INFO  nextflow.Session - [f3/9559b4] Submitted process > Bactmap (bactmap)
+Apr-21 21:26:08.849 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-21 21:26:08.851 [Task submitter] INFO  nextflow.Session - [8b/127439] Submitted process > Parsnp (parsnp)
+Apr-21 21:26:09.861 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: Parsnp (parsnp); status: COMPLETED; exit: 1; error: -; workDir: /workspaces/nf-comparative-genomics/outbreak/work/8b/1274399ac0e6b81e9d4278b656b291]
+Apr-21 21:26:09.869 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-21 21:26:09.904 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=Parsnp (parsnp); work-dir=/workspaces/nf-comparative-genomics/outbreak/work/8b/1274399ac0e6b81e9d4278b656b291
+  error [nextflow.exception.ProcessFailedException]: Process `Parsnp (parsnp)` terminated with an error exit status (1)
+Apr-21 21:26:10.006 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'Parsnp (parsnp)'
+
+Caused by:
+  Process `Parsnp (parsnp)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  mkdir -p logs results/parsnp
+  
+  parsnp       -d dummy/parsnp/assemblies       -r dummy/parsnp/ref.fa       -o parsnp_out       -p 1       &> logs/parsnp.log
+  
+  harvesttools       -x parsnp_out/parsnp.xmfa       -M parsnp_out/parsnp.aln       &>> logs/parsnp.log
+  
+  run_gubbins.py       -p parsnp parsnp_out/parsnp.aln       &> logs/gubbins_on_parsnp.log
+  
+  cp -r parsnp_out/* results/parsnp/
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Work dir:
+  /workspaces/nf-comparative-genomics/outbreak/work/8b/1274399ac0e6b81e9d4278b656b291
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Apr-21 21:26:10.040 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `Parsnp (parsnp)` terminated with an error exit status (1)
+Apr-21 21:26:10.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-21 21:26:10.145 [TaskFinalizer-1] DEBUG nextflow.Session - 
+Thread[Finalizer,8,system]
+  java.base@11.0.26-internal/java.lang.Object.wait(Native Method)
+  java.base@11.0.26-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+  java.base@11.0.26-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+  java.base@11.0.26-internal/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+Thread[Thread-1,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+  java.base@11.0.26-internal/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:513)
+  java.base@11.0.26-internal/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:675)
+  app//nextflow.util.SimpleAgent.run(SimpleAgent.groovy:89)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[TaskFinalizer-1,5,main]
+  java.base@11.0.26-internal/java.lang.Thread.dumpThreads(Native Method)
+  java.base@11.0.26-internal/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+  app//nextflow.util.SysHelper.dumpThreads(SysHelper.groovy:188)
+  app//nextflow.Session.abort(Session.groovy:800)
+  app//nextflow.Session.fault(Session.groovy:766)
+  app//nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:695)
+  app//nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:678)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+  app//nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:668)
+  app//nextflow.processor.TaskPollingMonitor$$Lambda$411/0x00000001004f5440.run(Unknown Source)
+  java.base@11.0.26-internal/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+  java.base@11.0.26-internal/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Actor Thread 2,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Common-Cleaner,8,InnocuousThreadGroup]
+  java.base@11.0.26-internal/java.lang.Object.wait(Native Method)
+  java.base@11.0.26-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+  java.base@11.0.26-internal/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+  java.base@11.0.26-internal/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:161)
+
+Thread[main,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+  java.base@11.0.26-internal/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+  app//nextflow.util.Barrier$_awaitCompletion_closure3.doCall(Barrier.groovy:92)
+  app//nextflow.util.Barrier$_awaitCompletion_closure3.call(Barrier.groovy)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy:337)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy)
+  app//nextflow.util.Barrier.awaitCompletion(Barrier.groovy:89)
+  app//nextflow.Session.await(Session.groovy:676)
+  app//nextflow.script.ScriptRunner.await(ScriptRunner.groovy:256)
+  app//nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:144)
+  app//nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+  app//nextflow.cli.Launcher.run(Launcher.groovy:503)
+  app//nextflow.cli.Launcher.main(Launcher.groovy:658)
+
+Thread[Reference Handler,10,system]
+  java.base@11.0.26-internal/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@11.0.26-internal/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+  java.base@11.0.26-internal/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+Thread[pool-2-thread-1,5,main]
+  java.base@11.0.26-internal/java.lang.Object.wait(Native Method)
+  java.base@11.0.26-internal/java.lang.Object.wait(Object.java:328)
+  java.base@11.0.26-internal/java.lang.ProcessImpl.waitFor(ProcessImpl.java:495)
+  app//nextflow.executor.local.LocalTaskHandler$_submit_closure1.doCall(LocalTaskHandler.groovy:109)
+  app//nextflow.executor.local.LocalTaskHandler$_submit_closure1.call(LocalTaskHandler.groovy)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.26-internal/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+  java.base@11.0.26-internal/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[process reaper (pid 22498),10,system]
+  java.base@11.0.26-internal/java.lang.ProcessHandleImpl.waitForProcessExit0(Native Method)
+  java.base@11.0.26-internal/java.lang.ProcessHandleImpl$1.run(ProcessHandleImpl.java:145)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Actor Thread 3,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Signal Dispatcher,9,system]
+
+Thread[pool-2-thread-2,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+  java.base@11.0.26-internal/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+  java.base@11.0.26-internal/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Actor Thread 4,5,main]
+  java.base@11.0.26-internal/java.lang.Class.getDeclaredConstructors0(Native Method)
+  java.base@11.0.26-internal/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+  java.base@11.0.26-internal/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+  app//org.codehaus.groovy.reflection.CachedClass$2.lambda$initValue$4(CachedClass.java:68)
+  app//org.codehaus.groovy.reflection.CachedClass$2$$Lambda$57/0x0000000100158840.run(Unknown Source)
+  java.base@11.0.26-internal/java.security.AccessController.doPrivileged(Native Method)
+  app//org.codehaus.groovy.reflection.CachedClass.doPrivileged(CachedClass.java:160)
+  app//org.codehaus.groovy.reflection.CachedClass.access$000(CachedClass.java:45)
+  app//org.codehaus.groovy.reflection.CachedClass$2.initValue(CachedClass.java:73)
+  app//org.codehaus.groovy.reflection.CachedClass$2.initValue(CachedClass.java:63)
+  app//org.codehaus.groovy.util.LazyReference.getLocked(LazyReference.java:50)
+  app//org.codehaus.groovy.util.LazyReference.get(LazyReference.java:37)
+  app//org.codehaus.groovy.reflection.CachedClass.getConstructors(CachedClass.java:276)
+  app//groovy.lang.MetaClassImpl.<init>(MetaClassImpl.java:232)
+  app//groovy.lang.MetaClassImpl.<init>(MetaClassImpl.java:242)
+  app//groovy.lang.MetaClassRegistry$MetaClassCreationHandle.createNormalMetaClass(MetaClassRegistry.java:166)
+  app//groovy.runtime.metaclass.CustomMetaClassCreationHandle.createNormalMetaClass(CustomMetaClassCreationHandle.java:56)
+  app//groovy.lang.MetaClassRegistry$MetaClassCreationHandle.createWithCustomLookup(MetaClassRegistry.java:156)
+  app//groovy.lang.MetaClassRegistry$MetaClassCreationHandle.create(MetaClassRegistry.java:139)
+  app//org.codehaus.groovy.reflection.ClassInfo.getMetaClassUnderLock(ClassInfo.java:271)
+  app//org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:314)
+  app//org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.getMetaClass(MetaClassRegistryImpl.java:269)
+  app//org.codehaus.groovy.vmplugin.v8.Selector$InitSelector.getMetaClass(Selector.java:406)
+  app//org.codehaus.groovy.vmplugin.v8.Selector$MethodSelector.setCallSiteTarget(Selector.java:1020)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fallback(IndyInterface.java:360)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.access$000(IndyInterface.java:50)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface$FallbackSupplier.get(IndyInterface.java:282)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.lambda$fromCache$1(IndyInterface.java:304)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface$$Lambda$89/0x000000010017dc40.provide(Unknown Source)
+  app//org.codehaus.groovy.vmplugin.v8.CacheableCallSite.getAndPut(CacheableCallSite.java:70)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.lambda$fromCache$2(IndyInterface.java:301)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface$$Lambda$88/0x000000010017d840.apply(Unknown Source)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.doWithCallSite(IndyInterface.java:376)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:298)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$DMH/0x0000000100175840.invokeStatic(LambdaForm$DMH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017cc40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+  app//nextflow.util.KryoHelper.newInstance(SerializationHelper.groovy:87)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1586)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:611)
+  app//org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:182)
+  app//nextflow.util.KryoHelper$1.methodMissing(SerializationHelper.groovy)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaClassImpl.invokeMissingMethod(MetaClassImpl.java:924)
+  app//groovy.lang.MetaClassImpl.invokePropertyOrMissing(MetaClassImpl.java:1413)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1335)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$DMH/0x0000000100190840.invokeInterface(LambdaForm$DMH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010024ac40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100277840.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100204440.guardWithCatch(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017e840.guard(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017e840.guard(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x00000001001d1840.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100196040.invokeExact_MT(LambdaForm$MH)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$DMH/0x0000000100175840.invokeStatic(LambdaForm$DMH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017cc40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+  app//nextflow.util.KryoHelper$1.initialValue(SerializationHelper.groovy:60)
+  app//nextflow.util.KryoHelper$1.initialValue(SerializationHelper.groovy)
+  java.base@11.0.26-internal/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+  java.base@11.0.26-internal/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+  java.base@11.0.26-internal/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100204440.guardWithCatch(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017e840.guard(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017e840.guard(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x00000001001d1840.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100196040.invokeExact_MT(LambdaForm$MH)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$DMH/0x0000000100175840.invokeStatic(LambdaForm$DMH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017cc40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+  app//nextflow.util.KryoHelper.kryo(SerializationHelper.groovy:79)
+  java.base@11.0.26-internal/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100204c40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100204440.guardWithCatch(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017e840.guard(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017f440.reinvoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x00000001001d1840.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x0000000100196040.invokeExact_MT(LambdaForm$MH)
+  app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$DMH/0x0000000100175840.invokeStatic(LambdaForm$DMH)
+  java.base@11.0.26-internal/java.lang.invoke.LambdaForm$MH/0x000000010017cc40.invoke(LambdaForm$MH)
+  java.base@11.0.26-internal/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+  app//nextflow.util.KryoHelper.serialize(SerializationHelper.groovy:166)
+  app//nextflow.trace.TraceRecord.serialize(TraceRecord.groovy:573)
+  app//nextflow.cache.CacheDB.writeTaskEntry0(CacheDB.groovy:147)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+  app//nextflow.cache.CacheDB$_putTaskAsync_closure1.doCall(CacheDB.groovy:157)
+  app//nextflow.cache.CacheDB$_putTaskAsync_closure1.call(CacheDB.groovy)
+  app//groovyx.gpars.agent.AgentBase.onMessage(AgentBase.java:102)
+  app//groovyx.gpars.agent.Agent.handleMessage(Agent.java:84)
+  app//groovyx.gpars.agent.AgentCore$1.handleMessage(AgentCore.java:48)
+  app//groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Actor Thread 1,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[process reaper,10,system]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Actor Thread 5,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.26-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.26-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[Task submitter,5,main]
+  java.base@11.0.26-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.26-internal/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+  java.base@11.0.26-internal/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+  app//nextflow.processor.TaskPollingMonitor.awaitTasks(TaskPollingMonitor.groovy:388)
+  app//nextflow.processor.TaskPollingMonitor.submitLoop(TaskPollingMonitor.groovy:412)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Thread[AnsiLogObserver,5,main]
+  java.base@11.0.26-internal/java.lang.Object.wait(Native Method)
+  app//nextflow.trace.AnsiLogObserver.render0(AnsiLogObserver.groovy:185)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.26-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.26-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.26-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.26-internal/java.lang.Thread.run(Thread.java:829)
+
+Apr-21 21:26:10.160 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-21 21:26:10.161 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-21 21:26:10.185 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Apr-21 21:26:10.223 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=943ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Apr-21 21:26:10.288 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-21 21:26:10.338 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

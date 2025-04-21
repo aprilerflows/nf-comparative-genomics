@@ -1,0 +1,12 @@
+0
+ref.fa.ref,Len:5000,GC:50.12
+B.fa,Len:5000,GC:50.12
+A.fa,Len:5000,GC:50.12
+        Finished processing input sequences, elapsed time: 0 seconds
+
+                 Compressed suffix graph construction elapsed time: 0 seconds
+
+parsnp_out
+parsnp_out/all.mumi
+                 MUMi pairwise distance calculation finished: 0 seconds
+

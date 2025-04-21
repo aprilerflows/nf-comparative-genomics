@@ -1,0 +1,1 @@
+ERROR: Please check samplesheet header -> sample,fastq_r1,fastq_r2 != sample,fastq_1,fastq_2

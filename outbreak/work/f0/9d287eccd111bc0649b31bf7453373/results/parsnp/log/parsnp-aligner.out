@@ -1,0 +1,20 @@
+0
+ref.fa.ref,Len:5000,GC:50.12
+B.fa,Len:5000,GC:50.12
+A.fa,Len:5000,GC:50.12
+        Finished processing input sequences, elapsed time: 0 seconds
+
+                 compressed suffix graph construction elapsed time: 0 seconds
+
+                 MUM anchor search elapsed time: 0 seconds
+
+        Finished recursive MUM search, elapsed time: 0 seconds
+
+        Finished filtering spurious matches, elapsed time: 0 seconds
+
+        LCBs created, elapsed time: 0 seconds
+
+        Output files updated, elapsed time: 0 seconds
+
+        See log file for further details. Total processing time: 0 seconds 
+

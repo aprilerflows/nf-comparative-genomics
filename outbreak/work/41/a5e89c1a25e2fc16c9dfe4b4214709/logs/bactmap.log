@@ -1,0 +1,333 @@
+
+ N E X T F L O W   ~  version 24.10.5
+
+Launching `https://github.com/nf-core/bactmap` [friendly_venter] DSL2 - revision: e83f8c5f0e [master]
+
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/bactmap v1.0.0
+------------------------------------------------------
+Core Nextflow options
+  revision            : master
+  runName             : friendly_venter
+  launchDir           : /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709
+  workDir             : /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work
+  projectDir          : /home/codespace/.nextflow/assets/nf-core/bactmap
+  userName            : codespace
+  profile             : conda
+  configFiles         : /home/codespace/.nextflow/assets/nf-core/bactmap/nextflow.config
+
+Input/output options
+  input               : /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/samples.csv
+  outdir              : results/bactmap
+
+Compulsory parameters
+  reference           : /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/ref.fa
+
+Optional pipeline steps
+  adapter_file        : /home/codespace/.nextflow/assets/nf-core/bactmap/assets/adapters.fas
+  remove_recombination: true
+  iqtree              : true
+
+Generic options
+  enable_conda        : true
+
+Max job request options
+  max_memory          : 15.GB
+  max_time            : 168.h
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+If you use nf-core/bactmap for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/bactmap/blob/master/CITATIONS.md
+------------------------------------------------------
+WARN: =============================================================================
+  There is a problem with your Conda configuration!
+
+  You will need to set-up the conda-forge and bioconda channels correctly.
+  Please refer to https://bioconda.github.io/user/install.html#set-up-channels
+  NB: The order of the channels matters!
+===================================================================================
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+WARN: Include with `addParams()` is deprecated -- pass params as a workflow or process input instead
+[-        ] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK -
+
+[-        ] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_INDEX                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                            -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH         -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA              -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                          -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT  -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX -
+
+[-        ] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK                          -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_INDEX                                              -
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+
+[-        ] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK                          -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_INDEX                                              -
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+
+[-        ] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK                          -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_INDEX                                              -
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:MULTIQC                                                -
+
+executor >  local (1)
+[3e/9ea034] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK (samples.csv)            [  0%] 0 of 1
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_INDEX                                              [  0%] 0 of 1
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:MULTIQC                                                -
+
+executor >  local (2)
+[3e/9ea034] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK (samples.csv)            [  0%] 0 of 1
+[02/f483f7] NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)                                     [  0%] 0 of 1
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:MULTIQC                                                -
+ERROR ~ Error executing process > 'NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)'
+
+Caused by:
+  Process `NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  mkdir index
+  bwa index  -p index/ref ref.fa 
+  echo $(bwa 2>&1) | sed 's/^.*Version: //; s/Contact:.*$//' > bwa.version.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 3: bwa: command not found
+
+Work dir:
+  /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work/02/f483f7244a2c353d0e4e4170a28619
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (2)
+[3e/9ea034] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK (samples.csv)            [100%] 1 of 1, failed: 1 ✘
+[02/f483f7] NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)                                     [100%] 1 of 1, failed: 1 ✘
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:MULTIQC                                                -
+Execution cancelled -- Finishing pending tasks before exit
+-[nf-core/bactmap] Pipeline completed with errors-
+ERROR ~ Error executing process > 'NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)'
+
+Caused by:
+  Process `NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  mkdir index
+  bwa index  -p index/ref ref.fa 
+  echo $(bwa 2>&1) | sed 's/^.*Version: //; s/Contact:.*$//' > bwa.version.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 3: bwa: command not found
+
+Work dir:
+  /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work/02/f483f7244a2c353d0e4e4170a28619
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (2)
+[3e/9ea034] NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK (samples.csv)            [100%] 1 of 1, failed: 1 ✘
+[02/f483f7] NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)                                     [100%] 1 of 1, failed: 1 ✘
+[-        ] NFCORE_BACTMAP:BACTMAP:FASTP                                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA                                    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BWA_MEM                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT                        -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS    -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT -
+[-        ] NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER                      -
+[-        ] NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME                                       -
+[-        ] NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES                                     -
+[-        ] NFCORE_BACTMAP:BACTMAP:SNPSITES                                               -
+[-        ] NFCORE_BACTMAP:BACTMAP:GUBBINS                                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE                                -
+[-        ] NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS                                  -
+[-        ] NFCORE_BACTMAP:BACTMAP:MULTIQC                                                -
+Execution cancelled -- Finishing pending tasks before exit
+-[nf-core/bactmap] Pipeline completed with errors-
+WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+ERROR ~ Error executing process > 'NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)'
+
+Caused by:
+  Process `NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  mkdir index
+  bwa index  -p index/ref ref.fa 
+  echo $(bwa 2>&1) | sed 's/^.*Version: //; s/Contact:.*$//' > bwa.version.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 3: bwa: command not found
+
+Work dir:
+  /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work/02/f483f7244a2c353d0e4e4170a28619
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+

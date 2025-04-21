@@ -1,0 +1,41 @@
+id: 'nf-core-bactmap-summary'
+description: ' - this information is collected when the pipeline is started.'
+section_name: 'nf-core/bactmap Workflow Summary'
+section_href: 'https://github.com/nf-core/bactmap'
+plot_type: 'html'
+data: |
+    <p style="font-size:110%"><b>Core Nextflow options</b></p>
+    <dl class="dl-horizontal">
+        <dt>revision</dt><dd><samp>master</samp></dd>
+        <dt>runName</dt><dd><samp>friendly_venter</samp></dd>
+        <dt>launchDir</dt><dd><samp>/workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709</samp></dd>
+        <dt>workDir</dt><dd><samp>/workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work</samp></dd>
+        <dt>projectDir</dt><dd><samp>/home/codespace/.nextflow/assets/nf-core/bactmap</samp></dd>
+        <dt>userName</dt><dd><samp>codespace</samp></dd>
+        <dt>profile</dt><dd><samp>conda</samp></dd>
+        <dt>configFiles</dt><dd><samp>/home/codespace/.nextflow/assets/nf-core/bactmap/nextflow.config</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Input/output options</b></p>
+    <dl class="dl-horizontal">
+        <dt>input</dt><dd><samp>/workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/samples.csv</samp></dd>
+        <dt>outdir</dt><dd><samp>results/bactmap</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Compulsory parameters</b></p>
+    <dl class="dl-horizontal">
+        <dt>reference</dt><dd><samp>/workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/ref.fa</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Optional pipeline steps</b></p>
+    <dl class="dl-horizontal">
+        <dt>adapter_file</dt><dd><samp>/home/codespace/.nextflow/assets/nf-core/bactmap/assets/adapters.fas</samp></dd>
+        <dt>remove_recombination</dt><dd><samp>true</samp></dd>
+        <dt>iqtree</dt><dd><samp>true</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Generic options</b></p>
+    <dl class="dl-horizontal">
+        <dt>enable_conda</dt><dd><samp>true</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Max job request options</b></p>
+    <dl class="dl-horizontal">
+        <dt>max_memory</dt><dd><samp>15.GB</samp></dd>
+        <dt>max_time</dt><dd><samp>168.h</samp></dd>
+    </dl>

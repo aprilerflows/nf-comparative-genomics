@@ -1,0 +1,26 @@
+21:50:53 - [1;37mINFO[0m - |--Parsnp 2.1.3--|
+
+21:50:53 - [1;37mINFO[0m - 
+***************************
+SETTINGS:
+|-refgenome:	/workspaces/nf-comparative-genomics/outbreak/dummy/parsnp/ref.fa
+|-genomes:	
+	/workspaces/nf-comparative-genomics/outbreak/dummy/parsnp/assemblies/B.fa
+	/workspaces/nf-comparative-genomics/outbreak/dummy/parsnp/assemblies/A.fa
+|-aligner:	muscle
+|-outdir:	parsnp_out
+|-OS:	Linux
+|-threads:	1
+***************************
+    
+21:50:53 - [1;37mINFO[0m - <<Parsnp started>>
+21:50:53 - [1;37mINFO[0m - No genbank file provided for reference annotations, skipping..
+21:50:53 - [1;37mINFO[0m - Filtering genomes...
+21:50:53 - [1;37mINFO[0m - Too few genomes to run partitions of size >50. Running all genomes at once.
+21:50:53 - [1;37mINFO[0m - Running Parsnp multi-MUM search and libMUSCLE aligner...
+21:50:53 - [1;37mINFO[0m - Reconstructing core genome phylogeny...
+21:50:53 - [1;33mWARNING[0m - Not enough SNPs to use RaxML. Attempting to use FastTree instead...
+21:50:53 - [1;37mINFO[0m - Aligned 3 genomes in 0.10 seconds
+21:50:53 - [1;37mINFO[0m - Parsnp finished! All output available in parsnp_out
+Loading parsnp_out/parsnp.xmfa...
+Writing parsnp_out/parsnp.aln...

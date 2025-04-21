@@ -1,0 +1,23 @@
+
+--- Gubbins 3.4 ---
+
+Croucher N. J., Page A. J., Connor T. R., Delaney A. J., Keane J. A., Bentley S. D., Parkhill J., Harris S.R. "Rapid phylogenetic analysis of large samples of recombinant bacterial whole genome sequences using Gubbins". Nucleic Acids Res. 2015 Feb 18;43(3):e15. doi: 10.1093/nar/gku1196.
+
+Checking dependencies and input files...
+
+Checking input alignment file...
+
+Filtering input alignment...
+...done. Run time: 0.05 s
+
+Running Gubbins to detect SNPs...
+gubbins "/workspaces/nf-comparative-genomics/outbreak/work/f0/9d287eccd111bc0649b31bf7453373/tmpftu9lke6/parsnp.aln"
+...done. Run time: 0.06 s
+
+Entering the main loop.
+
+*** Iteration 1 ***
+
+Constructing the phylogenetic tree with raxmlHPC-AVX2...
+raxmlHPC-AVX2 -safe -m GTRGAMMA -p 2531 -f d -p 1 -s /workspaces/nf-comparative-genomics/outbreak/work/f0/9d287eccd111bc0649b31bf7453373/parsnp.aln.phylip -n parsnp.iteration_1 > /dev/null 2>&1
+Failed while building the tree.

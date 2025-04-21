@@ -1,0 +1,86 @@
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~\
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/bactmap v1.0.0
+----------------------------------------------------
+
+Run Name: friendly_venter
+
+####################################################
+## nf-core/bactmap execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 127.
+The full error message was:
+
+Error executing process > 'NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)'
+
+Caused by:
+  Process `NFCORE_BACTMAP:BACTMAP:BWA_INDEX (ref.fa)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  mkdir index
+  bwa index  -p index/ref ref.fa 
+  echo $(bwa 2>&1) | sed 's/^.*Version: //; s/Contact:.*$//' > bwa.version.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 3: bwa: command not found
+
+Work dir:
+  /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work/02/f483f7244a2c353d0e4e4170a28619
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+
+
+The workflow was completed at 2025-04-21T21:51:08.379803Z (duration: 7.7s)
+
+The command used to launch the workflow was as follows:
+
+  nextflow run nf-core/bactmap --input /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/samples.csv --reference /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/ref.fa -profile conda --trim --remove_recombination --iqtree --max_memory 15.GB --outdir results/bactmap
+
+
+
+Pipeline Configuration:
+-----------------------
+ - revision: master
+ - runName: friendly_venter
+ - launchDir: /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709
+ - workDir: /workspaces/nf-comparative-genomics/outbreak/work/41/a5e89c1a25e2fc16c9dfe4b4214709/work
+ - projectDir: /home/codespace/.nextflow/assets/nf-core/bactmap
+ - userName: codespace
+ - profile: conda
+ - configFiles: /home/codespace/.nextflow/assets/nf-core/bactmap/nextflow.config
+ - input: /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/samples.csv
+ - outdir: results/bactmap
+ - reference: /workspaces/nf-comparative-genomics/outbreak/dummy/bactmap/ref.fa
+ - adapter_file: /home/codespace/.nextflow/assets/nf-core/bactmap/assets/adapters.fas
+ - remove_recombination: true
+ - iqtree: true
+ - enable_conda: true
+ - max_memory: 15.GB
+ - max_time: 168.h
+ - Date Started: 2025-04-21T21:51:00.671981Z
+ - Date Completed: 2025-04-21T21:51:08.379803Z
+ - Pipeline script file path: /home/codespace/.nextflow/assets/nf-core/bactmap/main.nf
+ - Pipeline script hash ID: 2e456c24888337ef099dc16d232b46a5
+ - Pipeline repository Git URL: https://github.com/nf-core/bactmap
+ - Pipeline repository Git Commit: e83f8c5f0e7020d69649d5d2ad19f79e9b2302b7
+ - Pipeline Git branch/tag: master
+ - Nextflow Version: 24.10.5
+ - Nextflow Build: 5935
+ - Nextflow Compile Timestamp: 04-03-2025 17:55 UTC
+
+--
+nf-core/bactmap
+https://github.com/nf-core/bactmap
